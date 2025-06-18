@@ -21,8 +21,10 @@
     ],
     "scripts": {
         "start": "npx rollup -c -w",
-        "build": "npm run scripts | npm run styles | npm run copy",
+        "build": "npm run scripts | npm run copy",
+        "scripts": "npx rollup -c",
         "styles": "npm run styles:pretty && npm run styles:nano",
+
         "copy": "cp -r src/images/ dist/images"
     },
     "peerDependencies": {
